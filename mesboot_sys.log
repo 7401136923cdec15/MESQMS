@@ -1,0 +1,722 @@
+2019-12-31 14:41:02,280 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 9072 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 14:41:02,296 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 14:41:03,733 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 14:41:03,748 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 14:41:03,780 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 14:41:03,780 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 14:41:03,780 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 14:41:03,780 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 14:41:03,780 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 14:41:03,795 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 14:41:03,952 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 14:41:03,952 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1609 ms
+2019-12-31 14:41:04,467 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 14:41:04,655 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 14:41:04,701 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 14:41:04,701 INFO (StartupInfoLogger.java:59)- Started Application in 2.865 seconds (JVM running for 3.959)
+2019-12-31 14:42:07,352 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 14:42:07,353 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 14:42:07,358 INFO (FrameworkServlet.java:546)- Completed initialization in 5 ms
+2019-12-31 14:42:17,608 INFO (Slf4jMLog.java:212)- MLog clients using slf4j logging.
+2019-12-31 14:42:17,639 INFO (Slf4jMLog.java:212)- Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-12-31 14:42:17,779 INFO (Slf4jMLog.java:212)- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> Mysql_dataSource, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgesn4a7p5vvs0xfnqh|5670651e, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1200, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 25, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-31 14:55:50,199 ERROR (OMSOutsourceOrderDAO.java:239)- org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT * FROM iplantlocoaps.oms_outsourceorder WHERE  1=1  and ( ? <= 0 or ? = ID ) and ( ? <= 0 or ? = StationID ) and ( ? <= 0 or ? = OrderID ) and ( ? is null or ? = '' or ? = PartNo ) and ( ? <= 0 or ? = MaterialID );]; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'OrderID' in 'where clause'
+2019-12-31 14:55:50,203 ERROR (OMSOutsourceOrderDAO.java:239)- org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT * FROM iplantlocoaps.oms_outsourceorder WHERE  1=1  and ( ? <= 0 or ? = ID ) and ( ? <= 0 or ? = StationID ) and ( ? <= 0 or ? = OrderID ) and ( ? is null or ? = '' or ? = PartNo ) and ( ? <= 0 or ? = MaterialID );]; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'OrderID' in 'where clause'
+2019-12-31 14:55:50,208 ERROR (OMSOutsourceOrderDAO.java:239)- org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT * FROM iplantlocoaps.oms_outsourceorder WHERE  1=1  and ( ? <= 0 or ? = ID ) and ( ? <= 0 or ? = StationID ) and ( ? <= 0 or ? = OrderID ) and ( ? is null or ? = '' or ? = PartNo ) and ( ? <= 0 or ? = MaterialID );]; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'OrderID' in 'where clause'
+2019-12-31 14:55:50,211 ERROR (OMSOutsourceOrderDAO.java:239)- org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT * FROM iplantlocoaps.oms_outsourceorder WHERE  1=1  and ( ? <= 0 or ? = ID ) and ( ? <= 0 or ? = StationID ) and ( ? <= 0 or ? = OrderID ) and ( ? is null or ? = '' or ? = PartNo ) and ( ? <= 0 or ? = MaterialID );]; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'OrderID' in 'where clause'
+2019-12-31 14:55:51,163 ERROR (APSServiceImpl.java:422)- java.lang.NullPointerException
+2019-12-31 14:56:40,543 ERROR (OMSOutsourceOrderDAO.java:239)- org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT * FROM iplantlocoaps.oms_outsourceorder WHERE  1=1  and ( ? <= 0 or ? = ID ) and ( ? <= 0 or ? = StationID ) and ( ? <= 0 or ? = OrderID ) and ( ? is null or ? = '' or ? = PartNo ) and ( ? <= 0 or ? = MaterialID );]; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'OrderID' in 'where clause'
+2019-12-31 14:56:40,602 ERROR (OMSOutsourceOrderDAO.java:239)- org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT * FROM iplantlocoaps.oms_outsourceorder WHERE  1=1  and ( ? <= 0 or ? = ID ) and ( ? <= 0 or ? = StationID ) and ( ? <= 0 or ? = OrderID ) and ( ? is null or ? = '' or ? = PartNo ) and ( ? <= 0 or ? = MaterialID );]; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'OrderID' in 'where clause'
+2019-12-31 14:56:40,658 ERROR (OMSOutsourceOrderDAO.java:239)- org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT * FROM iplantlocoaps.oms_outsourceorder WHERE  1=1  and ( ? <= 0 or ? = ID ) and ( ? <= 0 or ? = StationID ) and ( ? <= 0 or ? = OrderID ) and ( ? is null or ? = '' or ? = PartNo ) and ( ? <= 0 or ? = MaterialID );]; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'OrderID' in 'where clause'
+2019-12-31 14:56:40,714 ERROR (OMSOutsourceOrderDAO.java:239)- org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT * FROM iplantlocoaps.oms_outsourceorder WHERE  1=1  and ( ? <= 0 or ? = ID ) and ( ? <= 0 or ? = StationID ) and ( ? <= 0 or ? = OrderID ) and ( ? is null or ? = '' or ? = PartNo ) and ( ? <= 0 or ? = MaterialID );]; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'OrderID' in 'where clause'
+2019-12-31 14:57:00,681 ERROR (APSServiceImpl.java:422)- java.lang.NullPointerException
+2019-12-31 15:02:43,084 ERROR (APSServiceImpl.java:422)- java.lang.NullPointerException
+2019-12-31 15:04:30,827 ERROR (APSServiceImpl.java:424)- java.lang.NullPointerException
+2019-12-31 15:07:48,069 ERROR (APSServiceImpl.java:424)- java.lang.NullPointerException
+2019-12-31 15:21:27,023 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 11556 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 15:21:27,023 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 15:21:28,096 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 15:21:28,127 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 15:21:28,143 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 15:21:28,143 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 15:21:28,143 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 15:21:28,159 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 15:21:28,159 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 15:21:28,159 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 15:21:28,252 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 15:21:28,267 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1198 ms
+2019-12-31 15:21:28,595 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 15:21:28,787 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 15:21:28,841 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 15:21:28,848 INFO (StartupInfoLogger.java:59)- Started Application in 2.254 seconds (JVM running for 3.466)
+2019-12-31 15:22:37,686 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 15:22:37,687 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 15:22:37,696 INFO (FrameworkServlet.java:546)- Completed initialization in 9 ms
+2019-12-31 15:23:05,804 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 15:23:05,810 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 15:23:40,641 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 5028 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 15:23:40,641 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 15:23:41,841 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 15:23:41,853 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 15:23:41,869 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 15:23:41,869 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 15:23:41,884 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 15:23:41,884 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 15:23:41,884 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 15:23:41,884 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 15:23:42,009 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 15:23:42,009 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1274 ms
+2019-12-31 15:23:42,566 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 15:23:42,857 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 15:23:42,890 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 15:23:42,905 INFO (StartupInfoLogger.java:59)- Started Application in 2.777 seconds (JVM running for 4.606)
+2019-12-31 15:23:51,367 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 15:23:51,369 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 15:23:51,377 INFO (FrameworkServlet.java:546)- Completed initialization in 8 ms
+2019-12-31 15:23:51,504 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [104] milliseconds.
+2019-12-31 15:23:52,330 INFO (Slf4jMLog.java:212)- MLog clients using slf4j logging.
+2019-12-31 15:23:52,406 INFO (Slf4jMLog.java:212)- Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-12-31 15:23:52,604 INFO (Slf4jMLog.java:212)- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> Mysql_dataSource, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgesn4a7p7dcqn1jbdzh1|664e9bbc, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1200, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 25, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-31 15:29:05,287 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 15:29:05,300 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 15:29:16,505 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 8696 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 15:29:16,505 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 15:29:17,666 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 15:29:17,682 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 15:29:17,698 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 15:29:17,698 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 15:29:17,705 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 15:29:17,705 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 15:29:17,705 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 15:29:17,705 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 15:29:17,788 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 15:29:17,788 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1252 ms
+2019-12-31 15:29:18,236 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 15:29:18,436 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 15:29:18,467 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 15:29:18,482 INFO (StartupInfoLogger.java:59)- Started Application in 2.472 seconds (JVM running for 3.802)
+2019-12-31 15:29:33,647 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 15:29:33,649 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 15:29:33,655 INFO (FrameworkServlet.java:546)- Completed initialization in 6 ms
+2019-12-31 15:29:33,788 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [107] milliseconds.
+2019-12-31 15:29:34,494 INFO (Slf4jMLog.java:212)- MLog clients using slf4j logging.
+2019-12-31 15:29:34,556 INFO (Slf4jMLog.java:212)- Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-12-31 15:29:34,694 INFO (Slf4jMLog.java:212)- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> Mysql_dataSource, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgesn4a7p7koqsvinxmk|625f8220, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1200, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 25, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-31 15:34:06,820 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 15:34:06,823 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 15:34:17,538 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 14052 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 15:34:17,554 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 15:34:18,805 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 15:34:18,819 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 15:34:18,825 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 15:34:18,825 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 15:34:18,825 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 15:34:18,825 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 15:34:18,841 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 15:34:18,844 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 15:34:18,922 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 15:34:18,922 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1324 ms
+2019-12-31 15:34:19,470 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 15:34:19,853 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 15:34:19,896 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 15:34:19,896 INFO (StartupInfoLogger.java:59)- Started Application in 2.776 seconds (JVM running for 4.523)
+2019-12-31 15:34:37,283 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 15:34:37,283 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 15:34:37,294 INFO (FrameworkServlet.java:546)- Completed initialization in 11 ms
+2019-12-31 15:34:37,429 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [112] milliseconds.
+2019-12-31 15:35:38,391 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 15:35:38,395 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 15:35:54,931 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 12608 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 15:35:54,937 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 15:35:56,158 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 15:35:56,193 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 15:35:56,209 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 15:35:56,209 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 15:35:56,209 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 15:35:56,209 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 15:35:56,209 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 15:35:56,225 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 15:35:56,318 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 15:35:56,318 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1349 ms
+2019-12-31 15:35:57,085 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 15:35:57,389 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 15:35:57,407 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 15:35:57,424 INFO (StartupInfoLogger.java:59)- Started Application in 2.939 seconds (JVM running for 4.796)
+2019-12-31 15:36:14,005 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 15:36:14,007 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 15:36:14,019 INFO (FrameworkServlet.java:546)- Completed initialization in 11 ms
+2019-12-31 15:36:14,155 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [114] milliseconds.
+2019-12-31 15:38:20,362 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 15:38:20,368 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 15:38:30,265 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 13696 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 15:38:30,272 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 15:38:31,389 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 15:38:31,403 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 15:38:31,414 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 15:38:31,414 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 15:38:31,414 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 15:38:31,414 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 15:38:31,414 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 15:38:31,414 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 15:38:31,515 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 15:38:31,531 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1214 ms
+2019-12-31 15:38:32,340 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 15:38:32,577 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 15:38:32,636 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 15:38:32,654 INFO (StartupInfoLogger.java:59)- Started Application in 2.853 seconds (JVM running for 4.147)
+2019-12-31 15:39:07,512 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 15:39:07,514 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 15:39:07,525 INFO (FrameworkServlet.java:546)- Completed initialization in 11 ms
+2019-12-31 15:39:07,660 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [104] milliseconds.
+2019-12-31 15:40:20,104 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 15:40:20,106 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 15:40:30,911 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 14036 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 15:40:30,936 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 15:40:32,092 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 15:40:32,097 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 15:40:32,113 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 15:40:32,113 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 15:40:32,113 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 15:40:32,113 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 15:40:32,129 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 15:40:32,129 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 15:40:32,234 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 15:40:32,235 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1276 ms
+2019-12-31 15:40:33,093 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 15:40:33,391 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 15:40:33,423 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 15:40:33,423 INFO (StartupInfoLogger.java:59)- Started Application in 3.036 seconds (JVM running for 4.309)
+2019-12-31 15:40:39,368 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 15:40:39,369 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 15:40:39,384 INFO (FrameworkServlet.java:546)- Completed initialization in 13 ms
+2019-12-31 15:40:39,535 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [120] milliseconds.
+2019-12-31 15:46:37,999 INFO (Slf4jMLog.java:212)- MLog clients using slf4j logging.
+2019-12-31 15:46:38,027 INFO (Slf4jMLog.java:212)- Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-12-31 15:46:38,278 INFO (Slf4jMLog.java:212)- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> Mysql_dataSource, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgesn4a7p86mgr1evaahj|763d36da, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1200, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 25, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-31 16:05:45,596 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 14452 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 16:05:45,612 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 16:05:47,567 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 16:05:47,589 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 16:05:47,604 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 16:05:47,604 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 16:05:47,604 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 16:05:47,604 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 16:05:47,604 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 16:05:47,604 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 16:05:47,729 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 16:05:47,729 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1951 ms
+2019-12-31 16:05:48,435 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 16:05:48,646 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 16:05:48,686 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 16:05:48,702 INFO (StartupInfoLogger.java:59)- Started Application in 3.681 seconds (JVM running for 5.282)
+2019-12-31 16:08:24,471 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 16:08:24,472 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 16:08:24,478 INFO (FrameworkServlet.java:546)- Completed initialization in 6 ms
+2019-12-31 16:08:29,086 INFO (Slf4jMLog.java:212)- MLog clients using slf4j logging.
+2019-12-31 16:08:29,133 INFO (Slf4jMLog.java:212)- Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-12-31 16:08:29,421 INFO (Slf4jMLog.java:212)- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> Mysql_dataSource, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpcd2a7p8yq4hy7xxnc|60c8d0c5, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1200, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 25, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-31 16:08:29,977 ERROR (APSTaskPartController.java:398)- java.lang.NullPointerException
+2019-12-31 16:10:49,451 ERROR (APSTaskPartController.java:398)- java.lang.NullPointerException
+2019-12-31 16:27:05,235 ERROR (APSTaskPartController.java:395)- java.lang.NullPointerException
+2019-12-31 16:33:47,258 ERROR (APSTaskPartController.java:395)- java.lang.NullPointerException
+2019-12-31 16:42:53,618 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 12160 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 16:42:53,618 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 16:42:55,009 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 16:42:55,014 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 16:42:55,030 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 16:42:55,030 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 16:42:55,046 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 16:42:55,046 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 16:42:55,046 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 16:42:55,046 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 16:42:55,241 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 16:42:55,241 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1529 ms
+2019-12-31 16:42:55,642 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 16:42:55,875 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 16:42:55,906 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 16:42:55,922 INFO (StartupInfoLogger.java:59)- Started Application in 3.012 seconds (JVM running for 5.164)
+2019-12-31 16:46:25,254 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 16:46:25,255 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 16:46:25,262 INFO (FrameworkServlet.java:546)- Completed initialization in 7 ms
+2019-12-31 16:46:28,326 INFO (Slf4jMLog.java:212)- MLog clients using slf4j logging.
+2019-12-31 16:46:28,367 INFO (Slf4jMLog.java:212)- Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-12-31 16:46:28,577 INFO (Slf4jMLog.java:212)- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> Mysql_dataSource, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpcd2a7pabkshs0b35r|761d3152, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1200, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 25, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-31 16:47:01,200 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 16:47:01,204 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 17:03:19,757 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 9984 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 17:03:19,757 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 17:03:21,011 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 17:03:21,030 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 17:03:21,046 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 17:03:21,047 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 17:03:21,053 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 17:03:21,055 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 17:03:21,055 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 17:03:21,059 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 17:03:21,156 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 17:03:21,156 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1344 ms
+2019-12-31 17:03:21,659 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 17:03:21,847 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 17:03:21,888 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 17:03:21,893 INFO (StartupInfoLogger.java:59)- Started Application in 2.564 seconds (JVM running for 3.819)
+2019-12-31 17:04:07,424 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 17:04:07,425 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 17:04:07,433 INFO (FrameworkServlet.java:546)- Completed initialization in 8 ms
+2019-12-31 17:04:07,678 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [214] milliseconds.
+2019-12-31 17:04:11,139 INFO (Slf4jMLog.java:212)- MLog clients using slf4j logging.
+2019-12-31 17:04:11,182 INFO (Slf4jMLog.java:212)- Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-12-31 17:04:11,341 INFO (Slf4jMLog.java:212)- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> Mysql_dataSource, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqpcd2a7paycv8xmphlu|61fedfb6, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1200, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 25, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-31 17:34:22,519 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 3212 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 17:34:22,534 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 17:34:23,652 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 17:34:23,667 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 17:34:23,683 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 17:34:23,683 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 17:34:23,683 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 17:34:23,683 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 17:34:23,683 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 17:34:23,699 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 17:34:23,778 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 17:34:23,778 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1213 ms
+2019-12-31 17:34:24,140 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 17:34:24,342 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 17:34:24,405 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 17:34:24,421 INFO (StartupInfoLogger.java:59)- Started Application in 2.414 seconds (JVM running for 3.57)
+2019-12-31 17:34:49,752 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 17:34:49,754 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 17:34:49,764 INFO (FrameworkServlet.java:546)- Completed initialization in 10 ms
+2019-12-31 17:34:49,984 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [127] milliseconds.
+2019-12-31 17:36:01,768 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 17:36:01,781 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 17:36:12,387 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 13568 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 17:36:12,387 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 17:36:13,661 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 17:36:13,677 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 17:36:13,691 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 17:36:13,692 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 17:36:13,698 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 17:36:13,699 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 17:36:13,700 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 17:36:13,702 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 17:36:13,783 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 17:36:13,783 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1302 ms
+2019-12-31 17:36:14,123 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 17:36:14,343 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 17:36:14,374 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 17:36:14,374 INFO (StartupInfoLogger.java:59)- Started Application in 2.456 seconds (JVM running for 3.8)
+2019-12-31 17:36:19,813 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 17:36:19,813 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 17:36:19,821 INFO (FrameworkServlet.java:546)- Completed initialization in 8 ms
+2019-12-31 17:36:20,027 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [121] milliseconds.
+2019-12-31 17:44:41,090 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 17:44:41,105 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 17:49:39,590 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 9956 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 17:49:39,606 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 17:49:40,936 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 17:49:40,952 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 17:49:40,968 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 17:49:40,968 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 17:49:40,968 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 17:49:40,968 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 17:49:40,968 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 17:49:40,984 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 17:49:41,078 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 17:49:41,078 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1410 ms
+2019-12-31 17:49:41,436 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 17:49:41,747 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 17:49:41,778 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 17:49:41,778 INFO (StartupInfoLogger.java:59)- Started Application in 3.075 seconds (JVM running for 4.713)
+2019-12-31 17:49:51,637 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 17:49:51,638 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 17:49:51,644 INFO (FrameworkServlet.java:546)- Completed initialization in 6 ms
+2019-12-31 17:49:55,535 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [674] milliseconds.
+2019-12-31 17:51:00,904 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 17:51:00,921 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 20:46:53,807 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 12296 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 20:46:53,807 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 20:46:55,086 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 20:46:55,098 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 20:46:55,114 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 20:46:55,114 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 20:46:55,130 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 20:46:55,130 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 20:46:55,130 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 20:46:55,130 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 20:46:55,223 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 20:46:55,223 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1337 ms
+2019-12-31 20:46:55,583 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 20:46:55,850 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 20:46:55,881 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 20:46:55,897 INFO (StartupInfoLogger.java:59)- Started Application in 2.6 seconds (JVM running for 4.186)
+2019-12-31 20:48:18,687 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 20:48:18,688 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 20:48:18,694 INFO (FrameworkServlet.java:546)- Completed initialization in 6 ms
+2019-12-31 20:48:32,208 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [866] milliseconds.
+2019-12-31 21:03:11,796 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 12808 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 21:03:11,811 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 21:03:12,898 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 21:03:12,911 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 21:03:12,926 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 21:03:12,926 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 21:03:12,926 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 21:03:12,942 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 21:03:12,942 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 21:03:12,942 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 21:03:13,056 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 21:03:13,057 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1199 ms
+2019-12-31 21:03:13,418 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 21:03:13,708 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 21:03:13,786 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 21:03:13,802 INFO (StartupInfoLogger.java:59)- Started Application in 2.394 seconds (JVM running for 3.537)
+2019-12-31 21:03:31,232 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 21:03:31,232 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 21:03:31,238 INFO (FrameworkServlet.java:546)- Completed initialization in 6 ms
+2019-12-31 21:03:41,149 INFO (Slf4jMLog.java:212)- MLog clients using slf4j logging.
+2019-12-31 21:03:41,807 INFO (Slf4jMLog.java:212)- Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-12-31 21:03:44,576 INFO (Slf4jMLog.java:212)- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> Mysql_dataSource, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1b60wawa7pjid6li92py3|622d9d28, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1200, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 25, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-31 21:06:54,781 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 21:06:54,799 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 21:10:52,546 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 2380 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 21:10:52,561 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 21:10:53,739 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8088 (http)
+2019-12-31 21:10:53,751 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8088"]
+2019-12-31 21:10:53,767 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 21:10:53,767 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 21:10:53,767 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 21:10:53,767 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 21:10:53,767 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 21:10:53,767 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 21:10:53,893 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 21:10:53,893 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1268 ms
+2019-12-31 21:10:54,137 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 21:10:54,304 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8088"]
+2019-12-31 21:10:54,319 ERROR (DirectJDKLog.java:175)- Failed to start component [Connector[HTTP/1.1-8088]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.mes.loco.aps.server.Application.main(Application.java:21)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-12-31 21:10:54,319 INFO (DirectJDKLog.java:173)- Pausing ProtocolHandler ["http-nio-8088"]
+2019-12-31 21:10:54,319 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2019-12-31 21:10:54,319 INFO (DirectJDKLog.java:173)- The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-12-31 21:10:54,319 INFO (DirectJDKLog.java:173)- Stopping ProtocolHandler ["http-nio-8088"]
+2019-12-31 21:10:54,319 INFO (DirectJDKLog.java:173)- Destroying ProtocolHandler ["http-nio-8088"]
+2019-12-31 21:10:54,335 INFO (ConditionEvaluationReportLoggingListener.java:142)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-31 21:10:54,335 ERROR (LoggingFailureAnalysisReporter.java:42)- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8088 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8088, or configure this application to listen on another port.
+
+2019-12-31 21:10:54,335 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 21:11:33,750 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 14876 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 21:11:33,753 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 21:11:34,727 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8088 (http)
+2019-12-31 21:11:34,741 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8088"]
+2019-12-31 21:11:34,755 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 21:11:34,755 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 21:11:34,761 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 21:11:34,761 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 21:11:34,761 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 21:11:34,761 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 21:11:34,840 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 21:11:34,840 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1042 ms
+2019-12-31 21:11:35,267 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 21:11:35,455 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8088"]
+2019-12-31 21:11:35,455 ERROR (DirectJDKLog.java:175)- Failed to start component [Connector[HTTP/1.1-8088]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.mes.loco.aps.server.Application.main(Application.java:21)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-12-31 21:11:35,471 INFO (DirectJDKLog.java:173)- Pausing ProtocolHandler ["http-nio-8088"]
+2019-12-31 21:11:35,471 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2019-12-31 21:11:35,471 INFO (DirectJDKLog.java:173)- The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-12-31 21:11:35,471 INFO (DirectJDKLog.java:173)- Stopping ProtocolHandler ["http-nio-8088"]
+2019-12-31 21:11:35,486 INFO (DirectJDKLog.java:173)- Destroying ProtocolHandler ["http-nio-8088"]
+2019-12-31 21:11:35,486 INFO (ConditionEvaluationReportLoggingListener.java:142)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-31 21:11:35,486 ERROR (LoggingFailureAnalysisReporter.java:42)- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8088 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8088, or configure this application to listen on another port.
+
+2019-12-31 21:11:35,486 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 21:34:56,971 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 14856 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 21:34:56,971 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 21:34:58,032 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 21:34:58,043 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 21:34:58,058 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 21:34:58,058 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 21:34:58,076 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 21:34:58,076 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 21:34:58,077 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 21:34:58,080 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 21:34:58,158 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 21:34:58,158 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1141 ms
+2019-12-31 21:34:58,462 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 21:34:58,665 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 21:34:58,687 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 21:34:58,702 INFO (StartupInfoLogger.java:59)- Started Application in 2.14 seconds (JVM running for 3.767)
+2019-12-31 21:35:22,087 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 21:35:22,088 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 21:35:22,096 INFO (FrameworkServlet.java:546)- Completed initialization in 8 ms
+2019-12-31 21:35:22,210 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [106] milliseconds.
+2019-12-31 21:36:17,946 INFO (Slf4jMLog.java:212)- MLog clients using slf4j logging.
+2019-12-31 21:36:20,018 INFO (Slf4jMLog.java:212)- Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-12-31 21:36:25,090 INFO (Slf4jMLog.java:212)- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> Mysql_dataSource, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1b60wawa7pkobwof3nsls|7503c4df, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1200, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 25, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-31 21:49:05,452 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 21:49:05,457 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 22:26:39,087 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 15300 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 22:26:39,087 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 22:26:40,184 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 22:26:40,192 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 22:26:40,207 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 22:26:40,207 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 22:26:40,223 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 22:26:40,223 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 22:26:40,223 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 22:26:40,223 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 22:26:40,364 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 22:26:40,364 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1198 ms
+2019-12-31 22:26:40,762 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 22:26:40,949 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 22:26:40,981 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 22:26:40,981 INFO (StartupInfoLogger.java:59)- Started Application in 2.348 seconds (JVM running for 3.2)
+2019-12-31 22:27:26,180 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 22:27:26,181 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 22:27:26,187 INFO (FrameworkServlet.java:546)- Completed initialization in 6 ms
+2019-12-31 22:27:26,326 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [129] milliseconds.
+2019-12-31 22:27:29,153 INFO (Slf4jMLog.java:212)- MLog clients using slf4j logging.
+2019-12-31 22:27:29,203 INFO (Slf4jMLog.java:212)- Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-12-31 22:27:29,374 INFO (Slf4jMLog.java:212)- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> Mysql_dataSource, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1b60wawa7pmi4h712wg8bl|24008682, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1200, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 25, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-31 22:28:46,553 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 22:28:46,557 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 22:35:02,471 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 11800 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 22:35:02,471 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 22:35:03,648 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 22:35:03,675 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 22:35:03,716 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 22:35:03,717 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 22:35:03,726 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 22:35:03,727 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 22:35:03,729 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 22:35:03,733 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 22:35:03,844 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 22:35:03,860 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1327 ms
+2019-12-31 22:35:04,396 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 22:35:04,644 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 22:35:04,676 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 22:35:04,683 INFO (StartupInfoLogger.java:59)- Started Application in 2.63 seconds (JVM running for 3.607)
+2019-12-31 22:35:23,101 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 22:35:23,102 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 22:35:23,107 INFO (FrameworkServlet.java:546)- Completed initialization in 5 ms
+2019-12-31 22:35:23,229 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [114] milliseconds.
+2019-12-31 22:35:33,627 INFO (Slf4jMLog.java:212)- MLog clients using slf4j logging.
+2019-12-31 22:35:33,660 INFO (Slf4jMLog.java:212)- Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-12-31 22:35:33,757 INFO (Slf4jMLog.java:212)- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> Mysql_dataSource, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1b60wawa7pmsiak15offxx|2462cf57, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1200, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 25, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-31 22:35:42,356 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 22:35:42,367 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 22:35:50,988 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 13976 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 22:35:50,988 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 22:35:52,207 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 22:35:52,217 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 22:35:52,233 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 22:35:52,233 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 22:35:52,249 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 22:35:52,249 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 22:35:52,249 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 22:35:52,249 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 22:35:52,343 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 22:35:52,358 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1307 ms
+2019-12-31 22:35:52,698 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 22:35:52,888 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 22:35:52,919 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 22:35:52,935 INFO (StartupInfoLogger.java:59)- Started Application in 2.357 seconds (JVM running for 3.433)
+2019-12-31 22:36:36,078 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 22:36:36,078 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 22:36:36,086 INFO (FrameworkServlet.java:546)- Completed initialization in 8 ms
+2019-12-31 22:36:36,289 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [196] milliseconds.
+2019-12-31 22:36:56,716 INFO (Slf4jMLog.java:212)- MLog clients using slf4j logging.
+2019-12-31 22:36:57,678 INFO (Slf4jMLog.java:212)- Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-12-31 22:37:00,421 INFO (Slf4jMLog.java:212)- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> Mysql_dataSource, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1b60wawa7pmuazh1qwafn3|4afbf8aa, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1200, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 25, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-31 22:37:49,856 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 22:37:49,862 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 22:43:36,467 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 15328 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 22:43:36,467 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 22:43:37,511 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 22:43:37,514 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 22:43:37,530 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 22:43:37,530 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 22:43:37,530 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 22:43:37,546 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 22:43:37,546 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 22:43:37,546 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 22:43:37,640 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 22:43:37,656 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1142 ms
+2019-12-31 22:43:38,096 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 22:43:38,434 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 22:43:38,465 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 22:43:38,481 INFO (StartupInfoLogger.java:59)- Started Application in 2.476 seconds (JVM running for 3.591)
+2019-12-31 22:43:51,415 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-31 22:43:51,416 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2019-12-31 22:43:51,423 INFO (FrameworkServlet.java:546)- Completed initialization in 6 ms
+2019-12-31 22:43:51,561 WARN (DirectJDKLog.java:173)- Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [127] milliseconds.
+2019-12-31 22:43:54,963 INFO (Slf4jMLog.java:212)- MLog clients using slf4j logging.
+2019-12-31 22:43:55,035 INFO (Slf4jMLog.java:212)- Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2019-12-31 22:43:55,240 INFO (Slf4jMLog.java:212)- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 5000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> Mysql_dataSource, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1b60wawa7pn395ehucstt|527f9347, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/iplantmes?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1200, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 25, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2019-12-31 22:44:48,397 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 22:44:48,410 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 23:05:02,130 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 6912 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 23:05:02,130 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 23:05:03,256 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8088 (http)
+2019-12-31 23:05:03,271 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8088"]
+2019-12-31 23:05:03,287 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 23:05:03,287 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 23:05:03,303 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 23:05:03,303 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 23:05:03,303 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 23:05:03,303 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 23:05:03,381 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 23:05:03,381 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1204 ms
+2019-12-31 23:05:03,773 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 23:05:04,038 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8088"]
+2019-12-31 23:05:04,053 ERROR (DirectJDKLog.java:175)- Failed to start component [Connector[HTTP/1.1-8088]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.mes.loco.aps.server.Application.main(Application.java:21)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-12-31 23:05:04,053 INFO (DirectJDKLog.java:173)- Pausing ProtocolHandler ["http-nio-8088"]
+2019-12-31 23:05:04,053 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2019-12-31 23:05:04,069 INFO (DirectJDKLog.java:173)- The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-12-31 23:05:04,069 INFO (DirectJDKLog.java:173)- Stopping ProtocolHandler ["http-nio-8088"]
+2019-12-31 23:05:04,069 INFO (DirectJDKLog.java:173)- Destroying ProtocolHandler ["http-nio-8088"]
+2019-12-31 23:05:04,069 INFO (ConditionEvaluationReportLoggingListener.java:142)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-31 23:05:04,085 ERROR (LoggingFailureAnalysisReporter.java:42)- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8088 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8088, or configure this application to listen on another port.
+
+2019-12-31 23:05:04,085 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-31 23:05:32,947 INFO (StartupInfoLogger.java:50)- Starting Application on DESKTOP-K111BBP with PID 2008 (started by ShrisJava in C:\Users\ShrisJava\Workspaces\MyEclipse CI\MESLOCOAPS)
+2019-12-31 23:05:32,947 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-31 23:05:34,064 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 8084 (http)
+2019-12-31 23:05:34,069 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8084"]
+2019-12-31 23:05:34,085 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2019-12-31 23:05:34,085 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-31 23:05:34,101 INFO (DirectJDKLog.java:173)- Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-31 23:05:34,101 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-31 23:05:34,101 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-31 23:05:34,101 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-31 23:05:34,167 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2019-12-31 23:05:34,183 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 1189 ms
+2019-12-31 23:05:34,519 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-31 23:05:34,708 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8084"]
+2019-12-31 23:05:34,739 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 8084 (http) with context path ''
+2019-12-31 23:05:34,755 INFO (StartupInfoLogger.java:59)- Started Application in 2.254 seconds (JVM running for 3.264)
+2019-12-31 23:07:53,864 INFO (SpringApplicationAdminMXBeanRegistrar.java:163)- Application shutdown requested.
+2019-12-31 23:07:53,883 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
